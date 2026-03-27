@@ -1,0 +1,105 @@
+.WalletContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.WalletContent h1 {
+  font-size: 2.1rem;
+}
+.WalletWrapper {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  height: 100vh;
+}
+.BitcoinWallet, .EthereumWallet {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--secondary);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  font-size: 1.8rem;
+  padding: 12px;
+  color: var(--text);
+}
+.WalletFunctions {
+  display: flex;
+  justify-content: center;
+}
+.WalletProperty, .ApproveProperty {
+  background-color: var(--primary);
+  border: 1px solid var(--accent);
+  width: 120px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+.WalletFeatures {
+  background-color: var(--primary);
+  border: 1px solid var(--accent);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.Balance {
+  background-color: var(--primary);
+  border: 1px solid var(--accent);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.ApproveProperty {
+  padding: 6px;
+}
+.WalletProperty:hover, .Approve div:hover {
+  background-color: rgba(var(--secondary), 0.5);
+}
+.BitcoinWallet button, .EthereumWallet button  {
+  color: var(--text);
+  font-size: 1.8rem;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.BitcoinWallet button:hover {
+  background-color: rgba(var(--interactBitcoin), 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+.EthereumWallet button:hover {
+  background-color: rgba(var(--interactEthereum), 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+.BitcoinWallet button:disabled:hover, .EthereumWallet button:disabled:hove {
+  background-color: rgba(var(--secondary), 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+.Send, .Approve, .Move {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+.Approve {
+  gap: 4px;
+}
+.SendInput {
+  width: 15rem;
+  height: 2.2rem;
+  background-color: var(--primary);
+  color: var(--text);
+  font-size: 1.4rem;
+  border-radius: 10px;
+}
+.MoveInput {
+  width: 20rem;
+  height: 2.8rem;
+  background-color: var(--primary);
+  color: var(--text);
+  font-size: 1.4rem;
+  border-radius: 10px;
+}

@@ -1,0 +1,15 @@
+body {
+  background-color: var(--primary);
+  color: var(--text);
+  margin: 0;
+}
+html * {
+  font-family: PixelOperator;
+}
+@font-face {
+  font-family: PixelOperator;
+  src: url("./PixelOperator.ttf");
+}
+* {
+  box-sizing: border-box;
+}

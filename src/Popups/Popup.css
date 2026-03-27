@@ -1,0 +1,83 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btc-modal, .eth-modal {
+  font-size: 1.6rem;
+  background-color: var(--secondary);
+  border: 2px solid var(--accent);
+  padding: 20px;
+  padding-right: 50px;
+  border-radius: 8px;
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.approve-modal {
+  bottom: 15px;
+  right: 15px;
+  font-size: 1.6rem;
+  background-color: var(--secondary);
+  border: 2px solid var(--accent);
+  padding: 20px;
+  padding-right: 50px;
+  border-radius: 8px;
+  min-width: 300px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.eth-modal button, .btc-modal button, .approve-modal button {
+  padding: 4px;
+  margin: 4px;
+  color: var(--text);
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  border: 2px solid var(--accent);
+  border-radius: 4px;
+  transition: background-color 0.2s ease box-shadow 0.2s ease;
+}
+.eth-modal button:hover {
+  background-color: rgba(var(--interactEthereum), 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+.btc-modal button:hover {
+  background-color: rgba(var(--interactBitcoin), 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+.approve-modal button:hover {
+  background-color: rgba(var(--interactEthereum), 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+.closeBtn {
+  color: var(--text);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  cursor: pointer;
+}
+.Refresh {
+  width: 35px;
+  height: 35px;
+  transition: filter 0.3s ease;
+}
+
+.Refresh:hover {
+  filter: invert(10%) sepia(1%) saturate(186%) hue-rotate(329deg) brightness(89%) contrast(91%);
+}

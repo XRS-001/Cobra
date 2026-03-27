@@ -1,0 +1,32 @@
+.StartContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.StartContent h1 {
+  font-size: 2rem;
+}
+.StartContent .TextInput {
+  color: var(--text);
+  background-color: var(--secondary);
+  border-radius: 10px;
+  height: 3rem;
+  font-size: 2rem;
+}
+.StartContent .SubmitButton {
+  background-color: var(--secondary);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  font-size: 1.4rem;
+  padding: 15px;
+  margin: 15px;
+  width: 12rem;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.StartContent .SubmitButton:hover {
+  background-color: rgba(var(--interact), 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,38 @@
+{
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "npm run build && electron ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@svgr/webpack": "^8.1.0",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "electron": "^39.2.7",
+    "electron-builder": "^26.7.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.5",
+    "style-loader": "^4.0.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@metamask/eth-sig-util": "^8.2.0",
+    "@walletconnect/sign-client": "^2.23.4",
+    "argon2": "^0.44.0",
+    "bitcoinjs-lib": "^7.0.1",
+    "buffer": "^6.0.3",
+    "crypto": "^1.0.1",
+    "deep-freeze": "^0.0.1",
+    "ethereumjs-util": "^7.1.5",
+    "fs": "^0.0.1-security",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.12.0",
+    "secp256k1": "^5.0.1",
+    "web3": "^4.16.0"
+  }
+}

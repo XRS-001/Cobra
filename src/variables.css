@@ -1,0 +1,12 @@
+:root {
+  --dashboard: #cfcfcf;
+  --primary: #191919;
+  --secondary: #202020;
+  --interactBitcoin: 182, 125, 32;
+  --interactEthereum: 127, 61, 155;
+  --interact: 35, 48, 96;
+  --hover: 71, 71, 71;
+  --accent: #454545;
+  --text: #efefef;
+  --lightText: #909090;
+}

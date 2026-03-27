@@ -1,0 +1,29 @@
+.Sidebar {
+  min-height: 100vh;
+  width: 200px;
+  background-color: var(--secondary);
+  border-right: 1px solid var(--accent);
+  text-align: center;
+}
+.Sidebar h1 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.Sidebar button {
+  background-color: var(--secondary);
+  color: var(--lightText);
+  border: 1px ridge var(--accent);
+  border-right: 1px solid var(--accent);
+  font-size: 1.2rem;
+  padding: 6px;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  transition: background-color ease 0.1s transform 0.1s ease;
+}
+.Sidebar button:hover {
+  background-color: rgba(var(--hover), 0.8);
+  transform: translateY(-1px);
+}
